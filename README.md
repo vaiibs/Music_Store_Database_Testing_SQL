@@ -1,13 +1,15 @@
-# Music Store Analysis
+# 🎵 Music Store Backend & Database Testing Project
 
-This project demonstrates how to explore and analyze a music playlist database for an online music store using SQL.
+## 🚀 Project Overview
+This project demonstrates backend data validation and complex SQL querying skills. Using a digital music store database, I've performed deep data analysis and implemented database testing scenarios to ensure data integrity and business logic accuracy.
 
+## 🔍 Database Testing Scenarios Implemented
+* **Data Completeness:** Verified that mandatory fields (Customer Email, Invoice Date) contain no null values.
+* **Data Accuracy:** Validated that the 'Total Amount' in the Invoices table matches the sum of individual unit prices in InvoiceLines.
+* **Boundary Value Testing:** Identified top-spending customers and high-performing genres using aggregate functions (`SUM`, `COUNT`, `GROUP BY`).
+* **Complex Data Retrieval:** Used `JOIN` operations across 3+ tables (Tracks, Albums, Artists) to verify correct data mapping.
 
-Technologies Used 💻
-
-      Postgre SQL
-      pgAdmin 4
-
-Schema- Music Store Database
-
-![image](https://github.com/user-attachments/assets/9d1a399c-3c86-47b0-a31e-ee39104afb11)
+## 💻 Key SQL Queries
+* **Top Revenue by Country:** Used to verify market-specific sales data.
+* **Most Popular Genre:** Joins between `Track`, `Genre`, and `InvoiceLine` to validate sales trends.
+* **Customer Lifetime Value:** Complex aggregation to identify high-value users.
